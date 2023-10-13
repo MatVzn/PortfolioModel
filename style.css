@@ -38,7 +38,7 @@ main {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -59,7 +59,7 @@ h1 {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
-#perfil, #techs, #experience, #education, #recent, #posts {
+#perfil, #techs, #experience, #education, #recent, #posts, #box {
   padding: 1.2em 1em 1.5em;
 
   border-radius: 20px;
@@ -229,4 +229,51 @@ h1 {
 
 #posts p:hover {
   text-decoration: underline 2px white;
+}
+
+#space {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .6rem;
+}
+
+#space #box {
+  list-style: none;
+}
+
+#box ion-icon {
+  font-size: 22px;
+}
+
+#box .footer .like {
+  color: rgb(250, 60, 60);
+  margin-left: auto;
+}
+
+#box .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: .5em;
+  font-weight: 600;
+  font-size: 20px;
+
+  margin-bottom: .7em;
+}
+
+#box p {
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+#box .footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  gap: .4em;
+  padding-right: 1em;
+  justify-content: start;
 }
