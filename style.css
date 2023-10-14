@@ -124,33 +124,23 @@ h1 {
   font-weight: 300;
   font-size: 16px;
 
-  border-radius: 50px;
-  outline: 5px solid transparent;
-  background-color: transparent;
-  transition: background .3s, outline-color .3s, color .3s;
+  transition: color .3s;
 }
 
 #infos .style-default:hover {
   color: var(--selection-color);
-  background-color: var(--highlight-color);
-  outline: 5px solid var(--highlight-color);
 }
 
 #infos .link-github:hover {
-  background-color: var(--highlight-color);
-  outline: 5px solid var(--highlight-color);
+  color: rgb(173, 173, 173);
 }
 
 #infos .link-linkedin:hover {
   color: #0077B5;
-  background-color: var(--highlight-color);
-  outline: 5px solid var(--highlight-color);
 }
 
 #infos .link-twitter:hover {
   color: #1DA1F2;
-  background-color: var(--highlight-color);
-  outline: 5px solid var(--highlight-color);
 }
 
 /* DIV (<) TECHS */
