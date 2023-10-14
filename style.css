@@ -59,7 +59,7 @@ h1 {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
-#perfil, #techs, #experience, #education, #recent, #posts, #box {
+#perfil, #techs, #experience, #education, #recent, #title-box, #box {
   padding: 1.2em 1em 1.5em;
 
   border-radius: 20px;
@@ -215,19 +215,21 @@ h1 {
   width: 100%;
 }
 
-#posts {
+/* SECTION (>) POSTS */
+
+#title-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-#posts p {
+#title-box p {
   text-decoration: underline 2px transparent;
   transition: text-decoration-color .3s;
 }
 
-#posts p:hover {
+#title-box p:hover {
   text-decoration: underline 2px white;
 }
 
@@ -237,7 +239,7 @@ h1 {
   gap: 1rem;
 }
 
-#space #box {
+#space #box, #recents #box {
   list-style: none;
 }
 
@@ -276,4 +278,43 @@ h1 {
   gap: .4em;
   padding-right: 1em;
   justify-content: start;
+}
+
+/* SECTION (>) RECENTS */
+
+#recents {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#recents #box, #recents #aside .footer {
+  display: flex;
+  flex-direction: row;
+}
+
+#recents #aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#recents #box .avatar {
+  border-radius: 50%;
+  width: 9em;
+  height: 9em;
+  margin: 1em 2em 1em 1em;
+}
+
+#recents #aside #title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#recents #aside .footer {
+  display: flex;
+  flex-direction: row;
+  
+  gap: 1em;
+  list-style: none;
 }
