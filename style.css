@@ -215,6 +215,12 @@ h1 {
   width: 100%;
 }
 
+#area {
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+}
+
 /* SECTION (>) POSTS */
 
 #title-box {
