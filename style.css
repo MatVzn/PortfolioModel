@@ -164,14 +164,15 @@ h1 {
 
   padding: .6em;
   border-radius: 20px;
-  box-shadow: 4px 4px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: transparent;
 
-  transition: background-color .3s, color .3s, box-shadow .3s;
+  transition: transform .3s, background-color .3s, color .3s, box-shadow .3s;
 }
 
 #grid li:hover {
-  box-shadow: 4px 4px 1px 1px transparent;
   background-color: var(--body-bg-color);
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
   color: white;
 }
 
@@ -245,12 +246,13 @@ h1 {
 
 #box .footer .like {
   color: #FFFFFF;
-  transition: color .3s;
+  transition: transform .3s, color .3s;
   margin-left: auto;
 }
 
 #box .footer .like:hover {
   color: rgb(250, 60, 60);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
