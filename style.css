@@ -9,7 +9,6 @@
 :root {
   --body-bg-color: #363062;
   --text-color: #F5F5F5;
-  --selection-color: #F99417;
   --bg-cards: #4D4C7D;
   --bg-techs: #F99417;
   --highlight-color: rgb(245, 245, 245, 0.1);
@@ -151,7 +150,7 @@ h1 {
 }
 
 #infos .style-default:hover {
-  color: var(--selection-color);
+  color: var(--bg-techs);
 }
 
 #infos .link-github:hover {
