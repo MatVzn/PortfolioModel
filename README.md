@@ -9,7 +9,7 @@ Página feita a partir de um desafio da <a href="https://www.rocketseat.com.br">
 </p>
 
 <p align="center">
-  <img alt="preview PortfólioModel" src=".github/preview.jpg" width="100%">
+  <img alt="preview image" src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
