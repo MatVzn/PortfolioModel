@@ -243,12 +243,13 @@ h1 {
   align-items: center;
 }
 
-#title-box p {
+#title-box a {
+  color: var(--text-color);
   text-decoration: underline 2px transparent;
   transition: text-decoration-color .3s;
 }
 
-#title-box p:hover {
+#title-box a:hover {
   text-decoration: underline 2px white;
 }
 
@@ -323,6 +324,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: .6em;
 }
 
 #recents #box .avatar {
@@ -335,6 +337,7 @@ h1 {
 #recents #aside #title {
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: .4em;
 }
 
 #recents #aside .footer {
@@ -343,4 +346,46 @@ h1 {
   
   gap: 1em;
   list-style: none;
+}
+
+/* RESPONSIVE  */
+
+@media (max-width: 1120px) {
+  #space {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  #space #box, #recents #box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #recents #box {
+    align-items: center;
+  }
+
+  #recents #box .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .2em;
+  }
+
+  main {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    gap: 1em;
+  }
+
+  #principal, #projects {
+    gap: 1em;
+  }
 }
